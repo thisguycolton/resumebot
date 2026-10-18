@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Colton Hagan's portfolio (Rails + Inertia + React + Vite)",
+  "type": "module",
+  "dependencies": {
+    "@inertiajs/react": "^3.7.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@inertiajs/vite": "^3.7.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.1",
+    "vite-plugin-ruby": "^5.2.5"
+  }
+}
