@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+
+    <% if @meta %>
+      <title><%= @meta[:title] %></title>
+      <meta name="description" content="<%= @meta[:description] %>">
+      <link rel="canonical" href="<%= @meta[:canonical_url] %>">
+
+      <meta property="og:type" content="website">
+      <meta property="og:site_name" content="<%= @meta[:site_name] %>">
+      <meta property="og:title" content="<%= @meta[:title] %>">
+      <meta property="og:description" content="<%= @meta[:description] %>">
+      <meta property="og:url" content="<%= @meta[:canonical_url] %>">
+      <% if @meta[:image_url] %>
+        <meta property="og:image" content="<%= @meta[:image_url] %>">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="<%= @meta[:image_alt] %>">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="<%= @meta[:image_url] %>">
+      <% end %>
+      <meta name="twitter:title" content="<%= @meta[:title] %>">
+      <meta name="twitter:description" content="<%= @meta[:description] %>">
+    <% end %>
+
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="/icon.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%= vite_stylesheet_tag "application" %>
+    <%= vite_react_refresh_tag %>
+    <%= vite_client_tag %>
+    <%= vite_javascript_tag "inertia.jsx" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
