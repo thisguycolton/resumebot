@@ -1,0 +1,98 @@
+# The single source of truth for everything visitors read on the site.
+# Edit this file and redeploy. Nothing in app/frontend contains copy.
+#
+# Leave a URL empty (or delete the line) to hide whatever depends on it:
+#   - person.linkedin_url   -> LinkedIn link in the footer
+#   - project.code_url      -> "Code" button on that project card
+#   - video.url             -> shows the placeholder instead of a player
+
+meta:
+  title: Colton Hagan · Full Stack Developer (Ruby on Rails, React)
+  description: >-
+    Full stack developer with 10+ years of Ruby on Rails. I build and ship complete
+    products solo: backend, frontend, payments, mobile apps and deployment.
+    Spokane, WA. Open to remote work.
+  # Served from public/. Use a PNG or JPG, 1200x630. LinkedIn, Slack and most
+  # email clients do not reliably render WebP link previews.
+  og_image: /images/og.png
+  og_image_alt: Colton Hagan, Full Stack Developer. Ruby on Rails and React.
+
+ui:
+  skip_to_content: Skip to content
+  email_button: Email me
+  resume_button: Résumé
+  github_button: GitHub
+  live_button: Live site
+  code_button: Code
+  features_heading: Highlights
+  stack_heading: Built with
+  footer_heading: Get in touch
+  linkedin_label: LinkedIn
+
+person:
+  name: Colton Hagan
+  role: Full Stack Developer
+  skills: Ruby on Rails · React
+  location: Spokane, WA
+  availability: Open to remote work
+  email: coltonhagan@gmail.com
+  github_url: https://github.com/thisguycolton
+  linkedin_url:           # set to show the LinkedIn link in the footer
+  resume_path: /resume.pdf
+  resume_filename: Colton-Hagan-Resume.pdf
+
+video:
+  heading: See it in action
+  # A YouTube or Loom share URL, or an mp4 in public/ (for example /demo.mp4).
+  url:
+  # Optional poster image for an mp4, served from public/.
+  poster:
+  title: Colton Hagan's demo video
+  placeholder_title: Demo video coming soon
+  placeholder_text: A short walkthrough of my work will live here.
+
+projects_heading: Selected projects
+
+projects:
+  - slug: metr
+    name: metr.
+    description: >-
+      Ride booking for independent drivers. Riders book their own driver directly
+      instead of going through Uber or Lyft.
+    screenshot: /images/metr.webp
+    screenshot_alt: Screenshot of the metr. ride booking app
+    live_url: https://metr.hmblbot.com/tour
+    code_url:               # add when the repo is public
+    features:
+      - Stripe Connect card payments, with holds on accept, capture at drop-off and tips
+      - Stripe Billing Pro plan
+      - Native iOS and Android apps (Capacitor) with Mapbox turn-by-turn and push notifications
+      - Live ride tracking with traffic-aware ETAs
+      - In-ride chat
+      - Mileage and expense log for taxes
+      - 438 automated tests
+    stack: [Rails 8, Inertia, React, TypeScript, Tailwind, PostgreSQL, Stripe, Mapbox, Twilio, Capacitor]
+
+  - slug: recoverybot
+    name: RecoveryBot
+    description: A platform for running 12-step recovery groups.
+    screenshot: /images/recoverybot.webp
+    screenshot_alt: Screenshot of the RecoveryBot group management platform
+    live_url: https://recoverybot.hmblbot.com
+    code_url: https://github.com/thisguycolton/HMBLBOT-RecoveryBot
+    features:
+      - A library of recovery books with search across all of them and shareable highlights
+      - Groups with meetings and court-verification forms
+      - Bylaws and policies as live documents, with PDF export and Word import
+      - Decision logs and business-meeting minutes checked against Robert's Rules
+      - Treasurer's reports and host scheduling for 28 weekly meetings
+      - A Tiptap-based page editor
+    stack: [Rails, React, Vite, Tailwind, Tiptap, Docker]
+
+about:
+  heading: About
+  body: >-
+    Full stack developer with 10+ years of Ruby on Rails who builds and ships
+    complete products on my own: backend, frontend, payments, mobile apps and
+    deployment. I've led small teams, worked directly with clients and founders,
+    and explain technical tradeoffs in plain language.
