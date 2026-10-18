@@ -1,0 +1,15 @@
+/.git/
+/.github/
+/.gitignore
+/.bundle
+/.env*
+/log/*
+/tmp/*
+/storage/*
+/node_modules/
+/public/vite*
+/config/*.key
+/docs/
+/test/
+/script/
+README.md
