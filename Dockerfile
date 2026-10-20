@@ -1,4 +1,3 @@
-# syntax=docker/dockerfile:1
 # Production image for CapRover (or anything that runs Docker).
 #   docker build -t portfolio .
 #   docker run -p 8080:80 -e SECRET_KEY_BASE=$(openssl rand -hex 64) -e SITE_URL=http://localhost:8080 portfolio
