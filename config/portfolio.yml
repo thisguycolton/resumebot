@@ -59,7 +59,7 @@ projects:
     description: >-
       Ride booking for independent drivers. Riders book their own driver directly
       instead of going through Uber or Lyft.
-    screenshot: /images/metr.webp
+    screenshot: /images/metr.png
     screenshot_alt: Screenshot of the metr. ride booking app
     live_url: https://metr.hmblbot.com/tour
     code_url:               # add when the repo is public
@@ -76,7 +76,7 @@ projects:
   - slug: recoverybot
     name: RecoveryBot
     description: A platform for running 12-step recovery groups.
-    screenshot: /images/recoverybot.webp
+    screenshot: /images/recoverybot.png
     screenshot_alt: Screenshot of the RecoveryBot group management platform
     live_url: https://recoverybot.hmblbot.com
     code_url: https://github.com/thisguycolton/HMBLBOT-RecoveryBot
