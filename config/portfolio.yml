@@ -37,7 +37,7 @@ person:
   availability: Open to remote work
   email: coltonhagan@gmail.com
   github_url: https://github.com/thisguycolton
-  linkedin_url:           # set to show the LinkedIn link in the footer
+  linkedin_url: https://www.linkedin.com/in/coltonhagan/  # blank hides the footer link
   resume_path: /resume.pdf
   resume_filename: Colton-Hagan-Resume.pdf
 

@@ -30,13 +30,13 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     assert projects.all? { |p| p[:features].any? && p[:stack].any? && p[:live_url].present? }
   end
 
-  test "leaves unset links as nil so the page can hide them" do
+  test "passes set links through and leaves unset ones nil" do
     get root_path
 
     metr, recoverybot = inertia.props[:projects]
     assert_nil metr[:code_url]
     assert_equal "https://github.com/thisguycolton/HMBLBOT-RecoveryBot", recoverybot[:code_url]
-    assert_nil inertia.props.dig(:person, :linkedin_url)
+    assert_equal "https://www.linkedin.com/in/coltonhagan/", inertia.props.dig(:person, :linkedin_url)
   end
 
   test "shows the video placeholder until a url is set" do
