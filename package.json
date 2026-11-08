@@ -12,7 +12,7 @@
   "devDependencies": {
     "@inertiajs/vite": "^3.7.1",
     "@tailwindcss/vite": "^4.3.3",
-    "@vitejs/plugin-react": "^6.1.1",
+    "@vitejs/plugin-react": "^6.2.1",
     "tailwindcss": "^4.3.3",
     "vite": "^8.3.4",
     "vite-plugin-ruby": "^5.2.6"
